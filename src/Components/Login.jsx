@@ -31,9 +31,9 @@ const Login = () => {
             <LabelSenha htmlFor="password">Senha</LabelSenha>    
             <InputSenha type="text" id="password" value={password} onBlur={handleBlur}
                 onChange={({target}) => setPassword(target.value)}/>
-                {error && <p>{error}</p>}
-
+                
             <ButtonLogin>Enviar</ButtonLogin>
+            {error && <p>{error}</p>}
         </FormLogin>
     )
 }
